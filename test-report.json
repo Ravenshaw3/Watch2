@@ -1,0 +1,170 @@
+{
+  "timestamp": "2025-10-03T09:37:06.517201",
+  "summary": {
+    "total_tests": 14,
+    "passed": 7,
+    "failed": 6,
+    "skipped": 1,
+    "success_rate": 50.0
+  },
+  "categories": {
+    "Service": {
+      "pass": 2,
+      "fail": 0,
+      "skip": 0
+    },
+    "Auth": {
+      "pass": 1,
+      "fail": 1,
+      "skip": 0
+    },
+    "Media": {
+      "pass": 0,
+      "fail": 2,
+      "skip": 0
+    },
+    "Playlist": {
+      "pass": 0,
+      "fail": 1,
+      "skip": 0
+    },
+    "Scan": {
+      "pass": 0,
+      "fail": 1,
+      "skip": 1
+    },
+    "Settings": {
+      "pass": 3,
+      "fail": 0,
+      "skip": 0
+    },
+    "Analytics": {
+      "pass": 0,
+      "fail": 1,
+      "skip": 0
+    },
+    "System": {
+      "pass": 1,
+      "fail": 0,
+      "skip": 0
+    }
+  },
+  "performance": {
+    "avg_response_ms": 2090.4585714285713,
+    "max_response_ms": 2126.3
+  },
+  "detailed_results": [
+    {
+      "timestamp": "2025-10-03T09:36:34.685395",
+      "category": "Service",
+      "test_name": "Backend Health",
+      "status": "PASS",
+      "details": "Status: healthy",
+      "response_time_ms": 2073.96
+    },
+    {
+      "timestamp": "2025-10-03T09:36:36.826665",
+      "category": "Service",
+      "test_name": "Frontend Availability",
+      "status": "PASS",
+      "details": "Frontend accessible",
+      "response_time_ms": 2125.12
+    },
+    {
+      "timestamp": "2025-10-03T09:36:38.910254",
+      "category": "Auth",
+      "test_name": "Login",
+      "status": "PASS",
+      "details": "Token received (length=372). token_preview=eyJhbGciOiJIUzI1NiIs... user=admin@example.com",
+      "response_time_ms": 2080.06
+    },
+    {
+      "timestamp": "2025-10-03T09:36:41.014219",
+      "category": "Auth",
+      "test_name": "User Profile",
+      "status": "FAIL",
+      "details": "Status Code: 500",
+      "response_time_ms": 0
+    },
+    {
+      "timestamp": "2025-10-03T09:36:45.168103",
+      "category": "Media",
+      "test_name": "Media List",
+      "status": "FAIL",
+      "details": "Status Code: 500",
+      "response_time_ms": 0
+    },
+    {
+      "timestamp": "2025-10-03T09:36:47.230316",
+      "category": "Media",
+      "test_name": "Categories",
+      "status": "FAIL",
+      "details": "Status Code: 500",
+      "response_time_ms": 0
+    },
+    {
+      "timestamp": "2025-10-03T09:36:51.370047",
+      "category": "Playlist",
+      "test_name": "List Playlists",
+      "status": "FAIL",
+      "details": "Status Code: 500",
+      "response_time_ms": 0
+    },
+    {
+      "timestamp": "2025-10-03T09:36:53.463705",
+      "category": "Scan",
+      "test_name": "Scan Info",
+      "status": "FAIL",
+      "details": "Status Code: 500",
+      "response_time_ms": 0
+    },
+    {
+      "timestamp": "2025-10-03T09:36:55.590941",
+      "category": "Scan",
+      "test_name": "Trigger Scan",
+      "status": "SKIP",
+      "details": "Scan skipped: Scan path not found: /app/media",
+      "response_time_ms": 2126.3
+    },
+    {
+      "timestamp": "2025-10-03T09:36:57.686955",
+      "category": "Settings",
+      "test_name": "Get Settings",
+      "status": "PASS",
+      "details": "Backup dir: /tmp/watch2-backups",
+      "response_time_ms": 2083.73
+    },
+    {
+      "timestamp": "2025-10-03T09:36:59.767462",
+      "category": "Settings",
+      "test_name": "Update Settings",
+      "status": "PASS",
+      "details": "Set backup directory to /tmp/watch2-backups",
+      "response_time_ms": 2072.08
+    },
+    {
+      "timestamp": "2025-10-03T09:37:01.893348",
+      "category": "Settings",
+      "test_name": "Verify Persistence",
+      "status": "PASS",
+      "details": "backup_directory persisted",
+      "response_time_ms": 0
+    },
+    {
+      "timestamp": "2025-10-03T09:37:03.966622",
+      "category": "Analytics",
+      "test_name": "Dashboard",
+      "status": "FAIL",
+      "details": "Status Code: 500",
+      "response_time_ms": 0
+    },
+    {
+      "timestamp": "2025-10-03T09:37:06.043900",
+      "category": "System",
+      "test_name": "Version Info",
+      "status": "PASS",
+      "details": "API Version: v1",
+      "response_time_ms": 2071.96
+    }
+  ]
+}

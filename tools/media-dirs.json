@@ -1,0 +1,99 @@
+{
+  "generatedAt": "2025-10-02T05:12:33.493587+00:00",
+  "mediaDirectories": [
+    "/app/media/Audiobooks",
+    "/app/media/Documentaries",
+    "/app/media/Kids",
+    "/app/media/Movies",
+    "/app/media/Music",
+    "/app/media/Music Videos",
+    "/app/media/Photos",
+    "/app/media/Podcasts",
+    "/app/media/TV Shows",
+    "/app/media/Wallpapers"
+  ],
+  "resolvedDirectories": [
+    "t:\\Audiobooks",
+    "t:\\Documentaries",
+    "t:\\Kids",
+    "t:\\Movies",
+    "t:\\Music",
+    "t:\\Music Videos",
+    "t:\\Photos",
+    "t:\\Podcasts",
+    "t:\\TV Shows",
+    "t:\\Wallpapers"
+  ],
+  "entries": [
+    {
+      "key": "movies",
+      "label": "Movies",
+      "source": "/app/media/Movies",
+      "resolved": "t:\\Movies",
+      "exists": true
+    },
+    {
+      "key": "tv_series",
+      "label": "TV Series",
+      "source": "/app/media/TV Shows",
+      "resolved": "t:\\TV Shows",
+      "exists": true
+    },
+    {
+      "key": "documentaries",
+      "label": "Documentaries",
+      "source": "/app/media/Documentaries",
+      "resolved": "t:\\Documentaries",
+      "exists": false
+    },
+    {
+      "key": "kids",
+      "label": "Kids & Family",
+      "source": "/app/media/Kids",
+      "resolved": "t:\\Kids",
+      "exists": true
+    },
+    {
+      "key": "concerts",
+      "label": "Concerts & Live Shows",
+      "source": "/app/media/Music Videos",
+      "resolved": "t:\\Music Videos",
+      "exists": true
+    },
+    {
+      "key": "music_albums",
+      "label": "Music Albums",
+      "source": "/app/media/Music",
+      "resolved": "t:\\Music",
+      "exists": true
+    },
+    {
+      "key": "audiobooks",
+      "label": "Audiobooks",
+      "source": "/app/media/Audiobooks",
+      "resolved": "t:\\Audiobooks",
+      "exists": true
+    },
+    {
+      "key": "podcasts",
+      "label": "Podcasts",
+      "source": "/app/media/Podcasts",
+      "resolved": "t:\\Podcasts",
+      "exists": true
+    },
+    {
+      "key": "photos",
+      "label": "Photos",
+      "source": "/app/media/Photos",
+      "resolved": "t:\\Photos",
+      "exists": true
+    },
+    {
+      "key": "wallpapers",
+      "label": "Wallpapers & Artwork",
+      "source": "/app/media/Wallpapers",
+      "resolved": "t:\\Wallpapers",
+      "exists": false
+    }
+  ]
+}

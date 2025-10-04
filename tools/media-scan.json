@@ -1,0 +1,1014 @@
+{
+  "generatedAt": "2025-10-02T05:12:33.295157+00:00",
+  "configPath": "\\\\Tower\\programs\\Watch2\\backend\\watch_media_dirs.yml",
+  "results": [
+    {
+      "key": "movies",
+      "label": "Movies",
+      "storageFormat": "collection",
+      "mediaType": "video",
+      "rootPath": "t:\\Movies",
+      "status": "ok",
+      "totalFiles": 1851,
+      "matchedFiles": 1851,
+      "stats": {
+        ".avi": 1,
+        ".jpg": 1118,
+        ".mkv": 691,
+        ".mp4": 41
+      },
+      "sample": [
+        {
+          "path": "t:\\Movies\\Wild Hogs (2007)\\fanart.jpg",
+          "relative": "Wild Hogs (2007)/fanart.jpg",
+          "size": 182090,
+          "modifiedAt": "2020-08-01T04:30:50.459021+00:00",
+          "extension": ".jpg",
+          "title": "fanart",
+          "collection": "Wild Hogs (2007)"
+        },
+        {
+          "path": "t:\\Movies\\Wild Hogs (2007)\\poster.jpg",
+          "relative": "Wild Hogs (2007)/poster.jpg",
+          "size": 266290,
+          "modifiedAt": "2020-06-02T02:19:46.584285+00:00",
+          "extension": ".jpg",
+          "title": "poster",
+          "collection": "Wild Hogs (2007)"
+        },
+        {
+          "path": "t:\\Movies\\Wild Hogs (2007)\\Wild Hogs 2007 Bluray-1080p.mkv",
+          "relative": "Wild Hogs (2007)/Wild Hogs 2007 Bluray-1080p.mkv",
+          "size": 5223967914,
+          "modifiedAt": "2023-01-25T06:26:38.812144+00:00",
+          "extension": ".mkv",
+          "title": "Wild Hogs 2007 Bluray-1080p",
+          "collection": "Wild Hogs (2007)"
+        },
+        {
+          "path": "t:\\Movies\\The Wild (2006)\\fanart.jpg",
+          "relative": "The Wild (2006)/fanart.jpg",
+          "size": 446847,
+          "modifiedAt": "2020-05-27T02:01:43.654825+00:00",
+          "extension": ".jpg",
+          "title": "fanart",
+          "collection": "The Wild (2006)"
+        },
+        {
+          "path": "t:\\Movies\\The Wild (2006)\\poster.jpg",
+          "relative": "The Wild (2006)/poster.jpg",
+          "size": 295676,
+          "modifiedAt": "2020-04-27T00:36:41.627486+00:00",
+          "extension": ".jpg",
+          "title": "poster",
+          "collection": "The Wild (2006)"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "key": "tv_series",
+      "label": "TV Series",
+      "storageFormat": "series",
+      "mediaType": "video",
+      "rootPath": "t:\\TV Shows",
+      "status": "ok",
+      "totalFiles": 3685,
+      "matchedFiles": 3685,
+      "stats": {
+        ".avi": 476,
+        ".mkv": 3170,
+        ".mov": 2,
+        ".mp4": 37
+      },
+      "sample": [
+        {
+          "path": "t:\\TV Shows\\AMV\\AMV (Rurouni Kenshin) - The Trans-Siberian Orchestra - Carol Of The Bells.avi",
+          "relative": "AMV/AMV (Rurouni Kenshin) - The Trans-Siberian Orchestra - Carol Of The Bells.avi",
+          "size": 31840256,
+          "modifiedAt": "2023-01-20T10:22:57.468430+00:00",
+          "extension": ".avi",
+          "series": "TV Shows",
+          "season": "AMV",
+          "title": "AMV (Rurouni Kenshin) - The Trans-Siberian Orchestra - Carol Of The Bells",
+          "seasonNumber": null,
+          "episodeNumber": null
+        },
+        {
+          "path": "t:\\TV Shows\\AMV\\AMV - Love Hina - Tubthumping.avi",
+          "relative": "AMV/AMV - Love Hina - Tubthumping.avi",
+          "size": 10878976,
+          "modifiedAt": "2023-01-20T10:22:47.285783+00:00",
+          "extension": ".avi",
+          "series": "TV Shows",
+          "season": "AMV",
+          "title": "AMV - Love Hina - Tubthumping",
+          "seasonNumber": null,
+          "episodeNumber": null
+        },
+        {
+          "path": "t:\\TV Shows\\AMV\\AMV - Various - A Little Less Conversation.avi",
+          "relative": "AMV/AMV - Various - A Little Less Conversation.avi",
+          "size": 54323200,
+          "modifiedAt": "2023-01-20T10:22:03.800290+00:00",
+          "extension": ".avi",
+          "series": "TV Shows",
+          "season": "AMV",
+          "title": "AMV - Various - A Little Less Conversation",
+          "seasonNumber": null,
+          "episodeNumber": null
+        },
+        {
+          "path": "t:\\TV Shows\\AMV\\AMV - Various - Halloween.avi",
+          "relative": "AMV/AMV - Various - Halloween.avi",
+          "size": 33368028,
+          "modifiedAt": "2023-01-20T10:21:19.511825+00:00",
+          "extension": ".avi",
+          "series": "TV Shows",
+          "season": "AMV",
+          "title": "AMV - Various - Halloween",
+          "seasonNumber": null,
+          "episodeNumber": null
+        },
+        {
+          "path": "t:\\TV Shows\\AMV\\AMV Rurouni Kenshin - DdR - Tsugaru.avi",
+          "relative": "AMV/AMV Rurouni Kenshin - DdR - Tsugaru.avi",
+          "size": 20398080,
+          "modifiedAt": "2023-01-20T10:20:24.543730+00:00",
+          "extension": ".avi",
+          "series": "TV Shows",
+          "season": "AMV",
+          "title": "AMV Rurouni Kenshin - DdR - Tsugaru",
+          "seasonNumber": null,
+          "episodeNumber": null
+        }
+      ],
+      "notes": null
+    },
+    {
+      "key": "documentaries",
+      "label": "Documentaries",
+      "storageFormat": "collection",
+      "mediaType": "video",
+      "rootPath": "t:\\Documentaries",
+      "status": "missing-root",
+      "totalFiles": 0,
+      "matchedFiles": 0,
+      "stats": {},
+      "sample": [],
+      "notes": "Expect flat files or per-title directories under the root. Example: <root>/Movie Title (2023)/Movie Title (2023).mkv"
+    },
+    {
+      "key": "kids",
+      "label": "Kids & Family",
+      "storageFormat": "collection",
+      "mediaType": "video",
+      "rootPath": "t:\\Kids",
+      "status": "ok",
+      "totalFiles": 143,
+      "matchedFiles": 143,
+      "stats": {
+        ".jpg": 96,
+        ".mkv": 46,
+        ".mp4": 1
+      },
+      "sample": [
+        {
+          "path": "t:\\Kids\\Aladdin (1992)\\Aladdin 1992 Bluray-2160p.mkv",
+          "relative": "Aladdin (1992)/Aladdin 1992 Bluray-2160p.mkv",
+          "size": 8200150714,
+          "modifiedAt": "2019-09-11T19:18:31+00:00",
+          "extension": ".mkv",
+          "title": "Aladdin 1992 Bluray-2160p",
+          "collection": "Aladdin (1992)"
+        },
+        {
+          "path": "t:\\Kids\\Aladdin (1992)\\fanart.jpg",
+          "relative": "Aladdin (1992)/fanart.jpg",
+          "size": 220042,
+          "modifiedAt": "2020-05-15T01:28:21.379261+00:00",
+          "extension": ".jpg",
+          "title": "fanart",
+          "collection": "Aladdin (1992)"
+        },
+        {
+          "path": "t:\\Kids\\Aladdin (1992)\\poster.jpg",
+          "relative": "Aladdin (1992)/poster.jpg",
+          "size": 422571,
+          "modifiedAt": "2020-09-15T01:23:40.768040+00:00",
+          "extension": ".jpg",
+          "title": "poster",
+          "collection": "Aladdin (1992)"
+        },
+        {
+          "path": "t:\\Kids\\Aladdin and the King of Thieves (1996)\\Aladdin and the King of Thieves 1996 Bluray-1080p.mkv",
+          "relative": "Aladdin and the King of Thieves (1996)/Aladdin and the King of Thieves 1996 Bluray-1080p.mkv",
+          "size": 7970006982,
+          "modifiedAt": "2020-02-06T14:00:31.958451+00:00",
+          "extension": ".mkv",
+          "title": "Aladdin and the King of Thieves 1996 Bluray-1080p",
+          "collection": "Aladdin and the King of Thieves (1996)"
+        },
+        {
+          "path": "t:\\Kids\\Aladdin and the King of Thieves (1996)\\fanart.jpg",
+          "relative": "Aladdin and the King of Thieves (1996)/fanart.jpg",
+          "size": 168885,
+          "modifiedAt": "2020-05-27T01:52:03.790924+00:00",
+          "extension": ".jpg",
+          "title": "fanart",
+          "collection": "Aladdin and the King of Thieves (1996)"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "key": "concerts",
+      "label": "Concerts & Live Shows",
+      "storageFormat": "collection",
+      "mediaType": "video",
+      "rootPath": "t:\\Music Videos",
+      "status": "empty",
+      "totalFiles": 0,
+      "matchedFiles": 0,
+      "stats": {},
+      "sample": [],
+      "notes": "No matching files found within include patterns."
+    },
+    {
+      "key": "music_albums",
+      "label": "Music Albums",
+      "storageFormat": "group",
+      "mediaType": "audio",
+      "rootPath": "t:\\Music",
+      "status": "ok",
+      "totalFiles": 13776,
+      "matchedFiles": 13776,
+      "stats": {
+        ".flac": 2165,
+        ".m4a": 5405,
+        ".mp3": 6206
+      },
+      "sample": [
+        {
+          "path": "t:\\Music\\Somewhere In Time\\01 - Caught Somewhere In Time.mp3",
+          "relative": "Somewhere In Time/01 - Caught Somewhere In Time.mp3",
+          "size": 10700800,
+          "modifiedAt": "2012-01-09T18:30:20+00:00",
+          "extension": ".mp3",
+          "artist": "Music",
+          "album": "Somewhere In Time",
+          "title": "01 - Caught Somewhere In Time",
+          "trackNumber": 1
+        },
+        {
+          "path": "t:\\Music\\Somewhere In Time\\02 - Wasted Years.mp3",
+          "relative": "Somewhere In Time/02 - Wasted Years.mp3",
+          "size": 7383040,
+          "modifiedAt": "2012-01-09T18:30:24+00:00",
+          "extension": ".mp3",
+          "artist": "Music",
+          "album": "Somewhere In Time",
+          "title": "02 - Wasted Years",
+          "trackNumber": 2
+        },
+        {
+          "path": "t:\\Music\\Somewhere In Time\\03 - Sea Of Madness.mp3",
+          "relative": "Somewhere In Time/03 - Sea Of Madness.mp3",
+          "size": 8208384,
+          "modifiedAt": "2012-01-09T18:30:16+00:00",
+          "extension": ".mp3",
+          "artist": "Music",
+          "album": "Somewhere In Time",
+          "title": "03 - Sea Of Madness",
+          "trackNumber": 3
+        },
+        {
+          "path": "t:\\Music\\Somewhere In Time\\04 - Heaven Can Wait.mp3",
+          "relative": "Somewhere In Time/04 - Heaven Can Wait.mp3",
+          "size": 10596352,
+          "modifiedAt": "2012-02-01T23:45:50+00:00",
+          "extension": ".mp3",
+          "artist": "Music",
+          "album": "Somewhere In Time",
+          "title": "04 - Heaven Can Wait",
+          "trackNumber": 4
+        },
+        {
+          "path": "t:\\Music\\Somewhere In Time\\05 - The Loneliness Of The Long Distance Runner.mp3",
+          "relative": "Somewhere In Time/05 - The Loneliness Of The Long Distance Runner.mp3",
+          "size": 9394176,
+          "modifiedAt": "2012-01-09T18:30:26+00:00",
+          "extension": ".mp3",
+          "artist": "Music",
+          "album": "Somewhere In Time",
+          "title": "05 - The Loneliness Of The Long Distance Runner",
+          "trackNumber": 5
+        }
+      ],
+      "notes": null
+    },
+    {
+      "key": "audiobooks",
+      "label": "Audiobooks",
+      "storageFormat": "series",
+      "mediaType": "audio",
+      "rootPath": "t:\\Audiobooks",
+      "status": "empty",
+      "totalFiles": 0,
+      "matchedFiles": 0,
+      "stats": {},
+      "sample": [],
+      "notes": "No matching files found within include patterns."
+    },
+    {
+      "key": "podcasts",
+      "label": "Podcasts",
+      "storageFormat": "series",
+      "mediaType": "audio",
+      "rootPath": "t:\\Podcasts",
+      "status": "empty",
+      "totalFiles": 0,
+      "matchedFiles": 0,
+      "stats": {},
+      "sample": [],
+      "notes": "No matching files found within include patterns."
+    },
+    {
+      "key": "photos",
+      "label": "Photos",
+      "storageFormat": "collection",
+      "mediaType": "image",
+      "rootPath": "t:\\Photos",
+      "status": "ok",
+      "totalFiles": 11755,
+      "matchedFiles": 11755,
+      "stats": {
+        ".jpeg": 67,
+        ".jpg": 11656,
+        ".png": 32
+      },
+      "sample": [
+        {
+          "path": "t:\\Photos\\2005 Family\\5xDSCF6360.jpg",
+          "relative": "2005 Family/5xDSCF6360.jpg",
+          "size": 611437,
+          "modifiedAt": "2005-08-18T17:17:11+00:00",
+          "extension": ".jpg",
+          "title": "5xDSCF6360",
+          "collection": "2005 Family"
+        },
+        {
+          "path": "t:\\Photos\\2005 Family\\5xDSCF6370.jpg",
+          "relative": "2005 Family/5xDSCF6370.jpg",
+          "size": 671208,
+          "modifiedAt": "2005-08-18T16:00:33+00:00",
+          "extension": ".jpg",
+          "title": "5xDSCF6370",
+          "collection": "2005 Family"
+        },
+        {
+          "path": "t:\\Photos\\2005 Family\\5xDSCF6371.jpg",
+          "relative": "2005 Family/5xDSCF6371.jpg",
+          "size": 742507,
+          "modifiedAt": "2005-08-18T16:01:12+00:00",
+          "extension": ".jpg",
+          "title": "5xDSCF6371",
+          "collection": "2005 Family"
+        },
+        {
+          "path": "t:\\Photos\\2005 Family\\a7xDSCF6371.jpg",
+          "relative": "2005 Family/a7xDSCF6371.jpg",
+          "size": 1774784,
+          "modifiedAt": "2005-11-03T16:47:33+00:00",
+          "extension": ".jpg",
+          "title": "a7xDSCF6371",
+          "collection": "2005 Family"
+        },
+        {
+          "path": "t:\\Photos\\2005 Family\\azDSCF6365.jpg",
+          "relative": "2005 Family/azDSCF6365.jpg",
+          "size": 14427653,
+          "modifiedAt": "2005-09-20T21:30:49+00:00",
+          "extension": ".jpg",
+          "title": "azDSCF6365",
+          "collection": "2005 Family"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "key": "wallpapers",
+      "label": "Wallpapers & Artwork",
+      "storageFormat": "group",
+      "mediaType": "image",
+      "rootPath": "t:\\Wallpapers",
+      "status": "missing-root",
+      "totalFiles": 0,
+      "matchedFiles": 0,
+      "stats": {},
+      "sample": [],
+      "notes": "Group format expects artist/album/track.ext structure for audio collections."
+    }
+  ],
+  "summary": {
+    "totalCategories": 10,
+    "byStatus": {
+      "empty": 3,
+      "missing-root": 2,
+      "ok": 5
+    },
+    "files": {
+      "total": 31210,
+      "matched": 31210
+    }
+  },
+  "adminPayload": {
+    "version": 1,
+    "generatedAt": "2025-10-02T05:12:33.295125+00:00",
+    "categories": [
+      {
+        "key": "movies",
+        "label": "Movies",
+        "storageFormat": "collection",
+        "mediaType": "video",
+        "rootPath": "t:\\Movies",
+        "status": "ok",
+        "matchedFiles": 1851,
+        "sample": [
+          {
+            "path": "t:\\Movies\\Wild Hogs (2007)\\fanart.jpg",
+            "relative": "Wild Hogs (2007)/fanart.jpg",
+            "size": 182090,
+            "modifiedAt": "2020-08-01T04:30:50.459021+00:00",
+            "extension": ".jpg",
+            "title": "fanart",
+            "collection": "Wild Hogs (2007)"
+          },
+          {
+            "path": "t:\\Movies\\Wild Hogs (2007)\\poster.jpg",
+            "relative": "Wild Hogs (2007)/poster.jpg",
+            "size": 266290,
+            "modifiedAt": "2020-06-02T02:19:46.584285+00:00",
+            "extension": ".jpg",
+            "title": "poster",
+            "collection": "Wild Hogs (2007)"
+          },
+          {
+            "path": "t:\\Movies\\Wild Hogs (2007)\\Wild Hogs 2007 Bluray-1080p.mkv",
+            "relative": "Wild Hogs (2007)/Wild Hogs 2007 Bluray-1080p.mkv",
+            "size": 5223967914,
+            "modifiedAt": "2023-01-25T06:26:38.812144+00:00",
+            "extension": ".mkv",
+            "title": "Wild Hogs 2007 Bluray-1080p",
+            "collection": "Wild Hogs (2007)"
+          },
+          {
+            "path": "t:\\Movies\\The Wild (2006)\\fanart.jpg",
+            "relative": "The Wild (2006)/fanart.jpg",
+            "size": 446847,
+            "modifiedAt": "2020-05-27T02:01:43.654825+00:00",
+            "extension": ".jpg",
+            "title": "fanart",
+            "collection": "The Wild (2006)"
+          },
+          {
+            "path": "t:\\Movies\\The Wild (2006)\\poster.jpg",
+            "relative": "The Wild (2006)/poster.jpg",
+            "size": 295676,
+            "modifiedAt": "2020-04-27T00:36:41.627486+00:00",
+            "extension": ".jpg",
+            "title": "poster",
+            "collection": "The Wild (2006)"
+          }
+        ],
+        "notes": null
+      },
+      {
+        "key": "tv_series",
+        "label": "TV Series",
+        "storageFormat": "series",
+        "mediaType": "video",
+        "rootPath": "t:\\TV Shows",
+        "status": "ok",
+        "matchedFiles": 3685,
+        "sample": [
+          {
+            "path": "t:\\TV Shows\\AMV\\AMV (Rurouni Kenshin) - The Trans-Siberian Orchestra - Carol Of The Bells.avi",
+            "relative": "AMV/AMV (Rurouni Kenshin) - The Trans-Siberian Orchestra - Carol Of The Bells.avi",
+            "size": 31840256,
+            "modifiedAt": "2023-01-20T10:22:57.468430+00:00",
+            "extension": ".avi",
+            "series": "TV Shows",
+            "season": "AMV",
+            "title": "AMV (Rurouni Kenshin) - The Trans-Siberian Orchestra - Carol Of The Bells",
+            "seasonNumber": null,
+            "episodeNumber": null
+          },
+          {
+            "path": "t:\\TV Shows\\AMV\\AMV - Love Hina - Tubthumping.avi",
+            "relative": "AMV/AMV - Love Hina - Tubthumping.avi",
+            "size": 10878976,
+            "modifiedAt": "2023-01-20T10:22:47.285783+00:00",
+            "extension": ".avi",
+            "series": "TV Shows",
+            "season": "AMV",
+            "title": "AMV - Love Hina - Tubthumping",
+            "seasonNumber": null,
+            "episodeNumber": null
+          },
+          {
+            "path": "t:\\TV Shows\\AMV\\AMV - Various - A Little Less Conversation.avi",
+            "relative": "AMV/AMV - Various - A Little Less Conversation.avi",
+            "size": 54323200,
+            "modifiedAt": "2023-01-20T10:22:03.800290+00:00",
+            "extension": ".avi",
+            "series": "TV Shows",
+            "season": "AMV",
+            "title": "AMV - Various - A Little Less Conversation",
+            "seasonNumber": null,
+            "episodeNumber": null
+          },
+          {
+            "path": "t:\\TV Shows\\AMV\\AMV - Various - Halloween.avi",
+            "relative": "AMV/AMV - Various - Halloween.avi",
+            "size": 33368028,
+            "modifiedAt": "2023-01-20T10:21:19.511825+00:00",
+            "extension": ".avi",
+            "series": "TV Shows",
+            "season": "AMV",
+            "title": "AMV - Various - Halloween",
+            "seasonNumber": null,
+            "episodeNumber": null
+          },
+          {
+            "path": "t:\\TV Shows\\AMV\\AMV Rurouni Kenshin - DdR - Tsugaru.avi",
+            "relative": "AMV/AMV Rurouni Kenshin - DdR - Tsugaru.avi",
+            "size": 20398080,
+            "modifiedAt": "2023-01-20T10:20:24.543730+00:00",
+            "extension": ".avi",
+            "series": "TV Shows",
+            "season": "AMV",
+            "title": "AMV Rurouni Kenshin - DdR - Tsugaru",
+            "seasonNumber": null,
+            "episodeNumber": null
+          }
+        ],
+        "notes": null
+      },
+      {
+        "key": "documentaries",
+        "label": "Documentaries",
+        "storageFormat": "collection",
+        "mediaType": "video",
+        "rootPath": "t:\\Documentaries",
+        "status": "missing-root",
+        "matchedFiles": 0,
+        "sample": [],
+        "notes": "Expect flat files or per-title directories under the root. Example: <root>/Movie Title (2023)/Movie Title (2023).mkv"
+      },
+      {
+        "key": "kids",
+        "label": "Kids & Family",
+        "storageFormat": "collection",
+        "mediaType": "video",
+        "rootPath": "t:\\Kids",
+        "status": "ok",
+        "matchedFiles": 143,
+        "sample": [
+          {
+            "path": "t:\\Kids\\Aladdin (1992)\\Aladdin 1992 Bluray-2160p.mkv",
+            "relative": "Aladdin (1992)/Aladdin 1992 Bluray-2160p.mkv",
+            "size": 8200150714,
+            "modifiedAt": "2019-09-11T19:18:31+00:00",
+            "extension": ".mkv",
+            "title": "Aladdin 1992 Bluray-2160p",
+            "collection": "Aladdin (1992)"
+          },
+          {
+            "path": "t:\\Kids\\Aladdin (1992)\\fanart.jpg",
+            "relative": "Aladdin (1992)/fanart.jpg",
+            "size": 220042,
+            "modifiedAt": "2020-05-15T01:28:21.379261+00:00",
+            "extension": ".jpg",
+            "title": "fanart",
+            "collection": "Aladdin (1992)"
+          },
+          {
+            "path": "t:\\Kids\\Aladdin (1992)\\poster.jpg",
+            "relative": "Aladdin (1992)/poster.jpg",
+            "size": 422571,
+            "modifiedAt": "2020-09-15T01:23:40.768040+00:00",
+            "extension": ".jpg",
+            "title": "poster",
+            "collection": "Aladdin (1992)"
+          },
+          {
+            "path": "t:\\Kids\\Aladdin and the King of Thieves (1996)\\Aladdin and the King of Thieves 1996 Bluray-1080p.mkv",
+            "relative": "Aladdin and the King of Thieves (1996)/Aladdin and the King of Thieves 1996 Bluray-1080p.mkv",
+            "size": 7970006982,
+            "modifiedAt": "2020-02-06T14:00:31.958451+00:00",
+            "extension": ".mkv",
+            "title": "Aladdin and the King of Thieves 1996 Bluray-1080p",
+            "collection": "Aladdin and the King of Thieves (1996)"
+          },
+          {
+            "path": "t:\\Kids\\Aladdin and the King of Thieves (1996)\\fanart.jpg",
+            "relative": "Aladdin and the King of Thieves (1996)/fanart.jpg",
+            "size": 168885,
+            "modifiedAt": "2020-05-27T01:52:03.790924+00:00",
+            "extension": ".jpg",
+            "title": "fanart",
+            "collection": "Aladdin and the King of Thieves (1996)"
+          }
+        ],
+        "notes": null
+      },
+      {
+        "key": "concerts",
+        "label": "Concerts & Live Shows",
+        "storageFormat": "collection",
+        "mediaType": "video",
+        "rootPath": "t:\\Music Videos",
+        "status": "empty",
+        "matchedFiles": 0,
+        "sample": [],
+        "notes": "No matching files found within include patterns."
+      },
+      {
+        "key": "music_albums",
+        "label": "Music Albums",
+        "storageFormat": "group",
+        "mediaType": "audio",
+        "rootPath": "t:\\Music",
+        "status": "ok",
+        "matchedFiles": 13776,
+        "sample": [
+          {
+            "path": "t:\\Music\\Somewhere In Time\\01 - Caught Somewhere In Time.mp3",
+            "relative": "Somewhere In Time/01 - Caught Somewhere In Time.mp3",
+            "size": 10700800,
+            "modifiedAt": "2012-01-09T18:30:20+00:00",
+            "extension": ".mp3",
+            "artist": "Music",
+            "album": "Somewhere In Time",
+            "title": "01 - Caught Somewhere In Time",
+            "trackNumber": 1
+          },
+          {
+            "path": "t:\\Music\\Somewhere In Time\\02 - Wasted Years.mp3",
+            "relative": "Somewhere In Time/02 - Wasted Years.mp3",
+            "size": 7383040,
+            "modifiedAt": "2012-01-09T18:30:24+00:00",
+            "extension": ".mp3",
+            "artist": "Music",
+            "album": "Somewhere In Time",
+            "title": "02 - Wasted Years",
+            "trackNumber": 2
+          },
+          {
+            "path": "t:\\Music\\Somewhere In Time\\03 - Sea Of Madness.mp3",
+            "relative": "Somewhere In Time/03 - Sea Of Madness.mp3",
+            "size": 8208384,
+            "modifiedAt": "2012-01-09T18:30:16+00:00",
+            "extension": ".mp3",
+            "artist": "Music",
+            "album": "Somewhere In Time",
+            "title": "03 - Sea Of Madness",
+            "trackNumber": 3
+          },
+          {
+            "path": "t:\\Music\\Somewhere In Time\\04 - Heaven Can Wait.mp3",
+            "relative": "Somewhere In Time/04 - Heaven Can Wait.mp3",
+            "size": 10596352,
+            "modifiedAt": "2012-02-01T23:45:50+00:00",
+            "extension": ".mp3",
+            "artist": "Music",
+            "album": "Somewhere In Time",
+            "title": "04 - Heaven Can Wait",
+            "trackNumber": 4
+          },
+          {
+            "path": "t:\\Music\\Somewhere In Time\\05 - The Loneliness Of The Long Distance Runner.mp3",
+            "relative": "Somewhere In Time/05 - The Loneliness Of The Long Distance Runner.mp3",
+            "size": 9394176,
+            "modifiedAt": "2012-01-09T18:30:26+00:00",
+            "extension": ".mp3",
+            "artist": "Music",
+            "album": "Somewhere In Time",
+            "title": "05 - The Loneliness Of The Long Distance Runner",
+            "trackNumber": 5
+          }
+        ],
+        "notes": null
+      },
+      {
+        "key": "audiobooks",
+        "label": "Audiobooks",
+        "storageFormat": "series",
+        "mediaType": "audio",
+        "rootPath": "t:\\Audiobooks",
+        "status": "empty",
+        "matchedFiles": 0,
+        "sample": [],
+        "notes": "No matching files found within include patterns."
+      },
+      {
+        "key": "podcasts",
+        "label": "Podcasts",
+        "storageFormat": "series",
+        "mediaType": "audio",
+        "rootPath": "t:\\Podcasts",
+        "status": "empty",
+        "matchedFiles": 0,
+        "sample": [],
+        "notes": "No matching files found within include patterns."
+      },
+      {
+        "key": "photos",
+        "label": "Photos",
+        "storageFormat": "collection",
+        "mediaType": "image",
+        "rootPath": "t:\\Photos",
+        "status": "ok",
+        "matchedFiles": 11755,
+        "sample": [
+          {
+            "path": "t:\\Photos\\2005 Family\\5xDSCF6360.jpg",
+            "relative": "2005 Family/5xDSCF6360.jpg",
+            "size": 611437,
+            "modifiedAt": "2005-08-18T17:17:11+00:00",
+            "extension": ".jpg",
+            "title": "5xDSCF6360",
+            "collection": "2005 Family"
+          },
+          {
+            "path": "t:\\Photos\\2005 Family\\5xDSCF6370.jpg",
+            "relative": "2005 Family/5xDSCF6370.jpg",
+            "size": 671208,
+            "modifiedAt": "2005-08-18T16:00:33+00:00",
+            "extension": ".jpg",
+            "title": "5xDSCF6370",
+            "collection": "2005 Family"
+          },
+          {
+            "path": "t:\\Photos\\2005 Family\\5xDSCF6371.jpg",
+            "relative": "2005 Family/5xDSCF6371.jpg",
+            "size": 742507,
+            "modifiedAt": "2005-08-18T16:01:12+00:00",
+            "extension": ".jpg",
+            "title": "5xDSCF6371",
+            "collection": "2005 Family"
+          },
+          {
+            "path": "t:\\Photos\\2005 Family\\a7xDSCF6371.jpg",
+            "relative": "2005 Family/a7xDSCF6371.jpg",
+            "size": 1774784,
+            "modifiedAt": "2005-11-03T16:47:33+00:00",
+            "extension": ".jpg",
+            "title": "a7xDSCF6371",
+            "collection": "2005 Family"
+          },
+          {
+            "path": "t:\\Photos\\2005 Family\\azDSCF6365.jpg",
+            "relative": "2005 Family/azDSCF6365.jpg",
+            "size": 14427653,
+            "modifiedAt": "2005-09-20T21:30:49+00:00",
+            "extension": ".jpg",
+            "title": "azDSCF6365",
+            "collection": "2005 Family"
+          }
+        ],
+        "notes": null
+      },
+      {
+        "key": "wallpapers",
+        "label": "Wallpapers & Artwork",
+        "storageFormat": "group",
+        "mediaType": "image",
+        "rootPath": "t:\\Wallpapers",
+        "status": "missing-root",
+        "matchedFiles": 0,
+        "sample": [],
+        "notes": "Group format expects artist/album/track.ext structure for audio collections."
+      }
+    ],
+    "mappings": [
+      {
+        "source": "/app/media",
+        "target": "t:",
+        "origin": "manual"
+      }
+    ]
+  },
+  "rootMappings": [
+    {
+      "source": "/app/media",
+      "target": "t:",
+      "origin": "manual"
+    }
+  ],
+  "recommendedSettings": {
+    "generatedAt": "2025-10-02T05:12:33.493587+00:00",
+    "mediaDirectories": [
+      "/app/media/Audiobooks",
+      "/app/media/Documentaries",
+      "/app/media/Kids",
+      "/app/media/Movies",
+      "/app/media/Music",
+      "/app/media/Music Videos",
+      "/app/media/Photos",
+      "/app/media/Podcasts",
+      "/app/media/TV Shows",
+      "/app/media/Wallpapers"
+    ],
+    "resolvedDirectories": [
+      "t:\\Audiobooks",
+      "t:\\Documentaries",
+      "t:\\Kids",
+      "t:\\Movies",
+      "t:\\Music",
+      "t:\\Music Videos",
+      "t:\\Photos",
+      "t:\\Podcasts",
+      "t:\\TV Shows",
+      "t:\\Wallpapers"
+    ],
+    "entries": [
+      {
+        "key": "movies",
+        "label": "Movies",
+        "source": "/app/media/Movies",
+        "resolved": "t:\\Movies",
+        "exists": true
+      },
+      {
+        "key": "tv_series",
+        "label": "TV Series",
+        "source": "/app/media/TV Shows",
+        "resolved": "t:\\TV Shows",
+        "exists": true
+      },
+      {
+        "key": "documentaries",
+        "label": "Documentaries",
+        "source": "/app/media/Documentaries",
+        "resolved": "t:\\Documentaries",
+        "exists": false
+      },
+      {
+        "key": "kids",
+        "label": "Kids & Family",
+        "source": "/app/media/Kids",
+        "resolved": "t:\\Kids",
+        "exists": true
+      },
+      {
+        "key": "concerts",
+        "label": "Concerts & Live Shows",
+        "source": "/app/media/Music Videos",
+        "resolved": "t:\\Music Videos",
+        "exists": true
+      },
+      {
+        "key": "music_albums",
+        "label": "Music Albums",
+        "source": "/app/media/Music",
+        "resolved": "t:\\Music",
+        "exists": true
+      },
+      {
+        "key": "audiobooks",
+        "label": "Audiobooks",
+        "source": "/app/media/Audiobooks",
+        "resolved": "t:\\Audiobooks",
+        "exists": true
+      },
+      {
+        "key": "podcasts",
+        "label": "Podcasts",
+        "source": "/app/media/Podcasts",
+        "resolved": "t:\\Podcasts",
+        "exists": true
+      },
+      {
+        "key": "photos",
+        "label": "Photos",
+        "source": "/app/media/Photos",
+        "resolved": "t:\\Photos",
+        "exists": true
+      },
+      {
+        "key": "wallpapers",
+        "label": "Wallpapers & Artwork",
+        "source": "/app/media/Wallpapers",
+        "resolved": "t:\\Wallpapers",
+        "exists": false
+      }
+    ]
+  },
+  "backendVerification": {
+    "authenticated": true,
+    "errors": [],
+    "settings": {
+      "mediaDirectories": [],
+      "missing": [
+        "/app/media/Audiobooks",
+        "/app/media/Documentaries",
+        "/app/media/Kids",
+        "/app/media/Movies",
+        "/app/media/Music",
+        "/app/media/Music Videos",
+        "/app/media/Photos",
+        "/app/media/Podcasts",
+        "/app/media/TV Shows",
+        "/app/media/Wallpapers"
+      ]
+    },
+    "categories": [
+      {
+        "key": "movies",
+        "label": "Movies",
+        "configuredRoot": "/app/media/Movies",
+        "storageFormat": "collection",
+        "backendCount": 0,
+        "backendStatus": null
+      },
+      {
+        "key": "tv_series",
+        "label": "TV Series",
+        "configuredRoot": "/app/media/TV Shows",
+        "storageFormat": "series",
+        "backendCount": 0,
+        "backendStatus": null
+      },
+      {
+        "key": "documentaries",
+        "label": "Documentaries",
+        "configuredRoot": "/app/media/Documentaries",
+        "storageFormat": "collection",
+        "backendCount": 0,
+        "backendStatus": null
+      },
+      {
+        "key": "kids",
+        "label": "Kids & Family",
+        "configuredRoot": "/app/media/Kids",
+        "storageFormat": "collection",
+        "backendCount": 0,
+        "backendStatus": null
+      },
+      {
+        "key": "concerts",
+        "label": "Concerts & Live Shows",
+        "configuredRoot": "/app/media/Music Videos",
+        "storageFormat": "collection",
+        "backendCount": 0,
+        "backendStatus": null
+      },
+      {
+        "key": "music_albums",
+        "label": "Music Albums",
+        "configuredRoot": "/app/media/Music",
+        "storageFormat": "group",
+        "backendCount": 0,
+        "backendStatus": null
+      },
+      {
+        "key": "audiobooks",
+        "label": "Audiobooks",
+        "configuredRoot": "/app/media/Audiobooks",
+        "storageFormat": "series",
+        "backendCount": 0,
+        "backendStatus": null
+      },
+      {
+        "key": "podcasts",
+        "label": "Podcasts",
+        "configuredRoot": "/app/media/Podcasts",
+        "storageFormat": "series",
+        "backendCount": 0,
+        "backendStatus": null
+      },
+      {
+        "key": "photos",
+        "label": "Photos",
+        "configuredRoot": "/app/media/Photos",
+        "storageFormat": "collection",
+        "backendCount": 0,
+        "backendStatus": null
+      },
+      {
+        "key": "wallpapers",
+        "label": "Wallpapers & Artwork",
+        "configuredRoot": "/app/media/Wallpapers",
+        "storageFormat": "group",
+        "backendCount": 0,
+        "backendStatus": null
+      }
+    ],
+    "mediaSample": {
+      "total": 0,
+      "items": []
+    }
+  }
+}

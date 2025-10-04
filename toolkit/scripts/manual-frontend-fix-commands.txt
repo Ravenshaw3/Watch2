@@ -1,0 +1,60 @@
+MANUAL COMMANDS TO FIX FRONTEND 404 ISSUES ON UNRAID
+====================================================
+
+SSH into your Unraid server and run these commands one by one:
+
+1. CREATE MISSING PUBLIC ASSETS:
+   mkdir -p /mnt/user/appdata/watch1/frontend/public
+
+2. CREATE VITE.SVG FILE:
+   cat > /mnt/user/appdata/watch1/frontend/public/vite.svg << 'EOF'
+   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 257">
+     <defs>
+       <linearGradient id="a" x1="-.828%" x2="57.636%" y1="7.652%" y2="78.411%">
+         <stop offset="0%" stop-color="#41D1FF"/>
+         <stop offset="100%" stop-color="#BD34FE"/>
+       </linearGradient>
+     </defs>
+     <path fill="url(#a)" d="M255.153 37.938L134.897 252.976c-2.483 4.44-8.862 4.466-11.382.048L.875 37.958c-2.746-4.814 1.371-10.646 6.827-9.67l120.385 21.517a6.537 6.537 0 0 0 2.322-.004l117.867-21.483c5.438-.991 9.574 4.796 6.877 9.62Z"/>
+   </svg>
+   EOF
+
+3. CREATE FAVICON PLACEHOLDER:
+   touch /mnt/user/appdata/watch1/frontend/public/favicon.ico
+
+4. REBUILD FRONTEND:
+   cd /mnt/user/appdata/watch1/frontend
+   npm run build
+
+5. UPDATE NGINX CONTAINER:
+   docker exec watch1-frontend rm -rf /usr/share/nginx/html/*
+   docker cp /mnt/user/appdata/watch1/frontend/dist/. watch1-frontend:/usr/share/nginx/html/
+
+6. VERIFY FIXES:
+   docker exec watch1-frontend ls -la /usr/share/nginx/html/vite.svg
+   curl -I http://192.168.254.14:3000/vite.svg
+
+ALTERNATIVE QUICK FIX (if build fails):
+=======================================
+Just add vite.svg directly to nginx container:
+
+docker exec watch1-frontend sh -c 'cat > /usr/share/nginx/html/vite.svg << EOF
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 257">
+  <path fill="#41D1FF" d="M255.153 37.938L134.897 252.976c-2.483 4.44-8.862 4.466-11.382.048L.875 37.958c-2.746-4.814 1.371-10.646 6.827-9.67l120.385 21.517a6.537 6.537 0 0 0 2.322-.004l117.867-21.483c5.438-.991 9.574 4.796 6.877 9.62Z"/>
+</svg>
+EOF'
+
+TESTING:
+========
+1. Open browser: http://192.168.254.14:3000
+2. Check browser console (F12) for 404 errors
+3. Verify vite.svg loads: http://192.168.254.14:3000/vite.svg
+
+AUTH.TS CONNECTION ISSUES:
+=========================
+After fixing 404s, if you still see "connection refused" for auth.ts:
+
+1. Check backend health: curl http://192.168.254.14:8000/health
+2. Check auth endpoint: curl http://192.168.254.14:8000/api/v1/auth/
+3. Verify CORS settings in backend
+4. Check if structured endpoints are properly registered

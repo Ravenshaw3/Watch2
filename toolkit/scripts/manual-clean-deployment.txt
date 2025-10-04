@@ -1,0 +1,91 @@
+MANUAL CLEAN BACKEND DEPLOYMENT
+===============================
+
+If the batch script has issues, run these commands manually:
+
+STEP 1: Backup current backend
+------------------------------
+ssh root@192.168.254.14 "cp -r /mnt/user/appdata/watch1/backend /mnt/user/appdata/watch1/backend.backup"
+
+STEP 2: Copy clean backend files
+--------------------------------
+scp -r p:\Watch1\backend\* root@192.168.254.14:/mnt/user/appdata/watch1/backend/
+
+STEP 3: Create clean requirements.txt
+-------------------------------------
+ssh root@192.168.254.14
+cat > /mnt/user/appdata/watch1/backend/requirements.txt << 'EOF'
+Flask==2.3.3
+Flask-CORS==4.0.0
+Flask-JWT-Extended==4.5.3
+psycopg2-binary==2.9.7
+python-dotenv==1.0.0
+Werkzeug==2.3.7
+bcrypt==4.0.1
+Pillow==10.0.1
+requests==2.31.0
+PyYAML==6.0.1
+mutagen==1.47.0
+EOF
+
+STEP 4: Create config file
+--------------------------
+mkdir -p /mnt/user/appdata/watch1/backend/config
+cat > /mnt/user/appdata/watch1/backend/config/watch_media_dirs.yml << 'EOF'
+media_categories:
+  movies:
+    name: Movies
+    extensions: [mp4, mkv, avi, mov]
+    include_patterns: ['**/Movies/**']
+  tv_shows:
+    name: TV Shows  
+    extensions: [mp4, mkv, avi, mov]
+    include_patterns: ['**/TV/**']
+  music:
+    name: Music
+    extensions: [mp3, flac, wav, aac]
+    include_patterns: ['**/Music/**']
+EOF
+
+STEP 5: Restart backend
+-----------------------
+docker rm -f watch1-backend
+docker run -d --name watch1-backend -p 8000:8000 \
+  -v /mnt/user/appdata/watch1/backend:/app \
+  -v /mnt/user/media:/app/media \
+  -w /app \
+  -e DB_HOST=watch1-db \
+  -e DB_USER=watch1_user \
+  -e DB_PASSWORD=watch1_password \
+  -e DB_NAME=watch1 \
+  --link watch1-db:watch1-db \
+  python:3.11-slim bash -c 'pip install -r requirements.txt && python main.py'
+
+STEP 6: Test deployment
+-----------------------
+# Wait 30 seconds, then test:
+curl http://192.168.254.14:8000/health
+
+# Test authentication:
+curl -X POST http://192.168.254.14:8000/api/v1/auth/login/access-token \
+  -H "Content-Type: application/json" \
+  -d '{"username":"test@example.com","password":"testpass123"}'
+
+EXPECTED RESULTS:
+================
+✅ Backend health: 200 OK
+✅ Authentication: JWT token returned
+✅ Frontend: http://192.168.254.14:3000 working
+✅ No more file corruption issues
+
+TROUBLESHOOTING:
+===============
+If scp fails:
+- Use Windows Terminal instead of PowerShell
+- Or use WinSCP GUI tool to copy files
+- Or use PuTTY for SSH commands
+
+If authentication fails:
+- Check database is running: docker ps | grep watch1-db
+- Verify credentials in database
+- Check backend logs: docker logs watch1-backend

@@ -1,0 +1,64 @@
+FIXING PERMISSIONS-POLICY AND API ERRORS
+=========================================
+
+ISSUE 1: Permissions-Policy Header Error (browsing-topics)
+----------------------------------------------------------
+The error is caused by an invalid permissions-policy header in your HTML.
+
+FIX: Update the meta tag in index.html
+SSH into your server and run:
+
+docker exec watch1-frontend sed -i 's/browsing-topics=()/browsing-topics=()/' /usr/share/nginx/html/index.html
+
+Or manually edit the permissions-policy meta tag to:
+<meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=(), usb=(), browsing-topics=()">
+
+ISSUE 2: VersionInfo.vue:72 Failed to Load
+------------------------------------------
+This is likely a missing API endpoint or CORS issue.
+
+FIX: Check if backend is running and accessible
+ssh root@192.168.254.14 "curl -s http://192.168.254.14:8000/health"
+
+If 404, restart backend:
+ssh root@192.168.254.14 "docker restart watch1-backend"
+
+ISSUE 3: GET Request in media.ts Failing
+----------------------------------------
+Media API endpoints not responding.
+
+FIX: Test media endpoint
+ssh root@192.168.254.14 "curl -s http://192.168.254.14:8000/api/v1/media/"
+
+If 404, the structured endpoints aren't loaded. Backend needs restart with working configuration.
+
+ISSUE 4: POST Request in auth.ts Failing
+----------------------------------------
+Authentication endpoint not responding.
+
+FIX: Test auth endpoint
+ssh root@192.168.254.14 "curl -X POST http://192.168.254.14:8000/api/v1/auth/login/access-token -H 'Content-Type: application/json' -d '{\"username\":\"test@example.com\",\"password\":\"testpass123\"}'"
+
+QUICK COMPLETE FIX:
+==================
+Run these commands in order:
+
+1. Fix permissions-policy header:
+   ssh root@192.168.254.14 "docker exec watch1-frontend sed -i 's/content=\"camera=(), microphone=(), geolocation=(), payment=(), usb=()\"/content=\"camera=(), microphone=(), geolocation=(), payment=(), usb=(), browsing-topics=()\"/g' /usr/share/nginx/html/index.html"
+
+2. Restart backend with working auth:
+   ssh root@192.168.254.14 "docker restart watch1-backend"
+
+3. Wait 30 seconds, then test:
+   ssh root@192.168.254.14 "curl -s http://192.168.254.14:8000/health"
+
+4. Test frontend:
+   Open http://192.168.254.14:3000 in browser
+   Check console (F12) for remaining errors
+
+ALTERNATIVE: Use Windows Terminal or PuTTY
+=========================================
+If PowerShell continues having issues:
+1. Open Windows Terminal or PuTTY
+2. SSH to 192.168.254.14
+3. Run the commands directly without quotes/escaping issues
